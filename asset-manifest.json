@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/bussiness-web/static/css/main.071e9a5f.css",
-    "main.js": "/bussiness-web/static/js/main.b782bf1f.js",
-    "static/js/453.cb732258.chunk.js": "/bussiness-web/static/js/453.cb732258.chunk.js",
+    "main.js": "/bussiness-web/static/js/main.53a97517.js",
+    "static/js/453.513ac43b.chunk.js": "/bussiness-web/static/js/453.513ac43b.chunk.js",
     "static/media/ilustration.png": "/bussiness-web/static/media/ilustration.aeb3c4fb590f5bec94e6.png",
     "static/media/iconPage.jpg": "/bussiness-web/static/media/iconPage.45c12a8bf0e6d6c4e72c.jpg",
     "static/media/bg4.jpg": "/bussiness-web/static/media/bg4.0d5f2ad743cd3de61d2c.jpg",
     "static/media/illustration_404.svg": "/bussiness-web/static/media/illustration_404.62e062ffb1aa9a40611965004c50973a.svg",
     "index.html": "/bussiness-web/index.html",
     "main.071e9a5f.css.map": "/bussiness-web/static/css/main.071e9a5f.css.map",
-    "main.b782bf1f.js.map": "/bussiness-web/static/js/main.b782bf1f.js.map",
-    "453.cb732258.chunk.js.map": "/bussiness-web/static/js/453.cb732258.chunk.js.map"
+    "main.53a97517.js.map": "/bussiness-web/static/js/main.53a97517.js.map",
+    "453.513ac43b.chunk.js.map": "/bussiness-web/static/js/453.513ac43b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.071e9a5f.css",
-    "static/js/main.b782bf1f.js"
+    "static/js/main.53a97517.js"
   ]
 }
