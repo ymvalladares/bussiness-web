@@ -54,7 +54,7 @@ function App() {
         {/* <Route path="/" element={<PrivateRoutes />}>
             <Route path="/soccer" element={<Soccer />} />
           </Route> */}
-        <Route path="*" element={<Failure />} />
+        {/* <Route path="*" element={<Failure />} /> */}
       </Routes>
       <ToastContainer />
     </BrowserRouter>
