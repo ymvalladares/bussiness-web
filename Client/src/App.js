@@ -35,7 +35,7 @@ const sampleUsers = [
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Project-Food">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
