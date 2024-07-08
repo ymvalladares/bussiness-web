@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Login from "./Login/Login";
@@ -15,27 +15,9 @@ import Welcome from "./Components/Welcome";
 import Traiding from "./Components/Traiding";
 import Products from "./Components/Products";
 
-const sampleUsers = [
-  {
-    id: 1,
-    name: "Alice",
-    status: "Online",
-    avatar: "/path/to/avatar1.jpg",
-    online: true,
-  },
-  {
-    id: 2,
-    name: "Bob",
-    status: "Offline",
-    avatar: "/path/to/avatar2.jpg",
-    online: false,
-  },
-  // More users...
-];
-
 function App() {
   return (
-    <BrowserRouter basename="/bussiness-web">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
@@ -52,7 +34,7 @@ function App() {
         <Route path="*" element={<Failure />} />
       </Routes>
       <ToastContainer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
