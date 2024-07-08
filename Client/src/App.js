@@ -17,7 +17,7 @@ import Products from "./Components/Products";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/bussiness-web">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
@@ -34,7 +34,7 @@ function App() {
         <Route path="*" element={<Failure />} />
       </Routes>
       <ToastContainer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
