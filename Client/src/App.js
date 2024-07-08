@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Login from "./Login/Login";
@@ -35,7 +35,7 @@ const sampleUsers = [
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/bussiness-web">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
@@ -57,7 +57,7 @@ function App() {
         <Route path="*" element={<Failure />} />
       </Routes>
       <ToastContainer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
