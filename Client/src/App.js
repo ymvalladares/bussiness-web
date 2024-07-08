@@ -41,8 +41,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password" element={<ResetPassword />} />
 
-        {/* <Route path="chat-web" element={<ChatAppMain users={sampleUsers} />} /> */}
-
         <Route path="/home-page/" element={<PrivateRoutes />}>
           <Route path="welcome" element={<Welcome />} />
           <Route path="dashboard" element={<Dashboard />} />
@@ -51,10 +49,7 @@ function App() {
           <Route path="products" element={<Products />} />
         </Route>
 
-        {/* <Route path="/" element={<PrivateRoutes />}>
-            <Route path="/soccer" element={<Soccer />} />
-          </Route> */}
-        {/* <Route path="*" element={<Failure />} /> */}
+        <Route path="*" element={<Failure />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

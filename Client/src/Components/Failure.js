@@ -37,7 +37,7 @@ const Failure = () => {
             }}
           />
 
-          <Button href="/" size="large" variant="contained">
+          <Button href="/login" size="large" variant="contained">
             Go to Home
           </Button>
         </Box>
