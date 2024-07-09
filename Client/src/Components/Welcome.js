@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import imgadeTest from "../Images/ilustration.png";
+import TableComp from "./TableComp";
 
 const Welcome = () => {
   const large_devices = useMediaQuery("(min-width:600px)");
@@ -52,6 +53,10 @@ const Welcome = () => {
             height="250px"
             src={imgadeTest}
           />
+        </Grid>
+
+        <Grid item xs={12} sx={{ marginTop: "-90px", marginBottom: "10px" }}>
+          <TableComp />
         </Grid>
       </Grid>
     </Box>

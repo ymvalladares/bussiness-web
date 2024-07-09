@@ -376,6 +376,20 @@ const Navbar = () => {
             </ListItem>
           ))}
         </List>
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: 0,
+            padding: "15px",
+            margin: "14px",
+            width: "90%",
+            height: "150px",
+            backgroundColor: "#FAFAFB",
+            borderRadius: "15px",
+          }}
+        >
+          footer
+        </Box>
       </Drawer>
       <Main
         sx={{

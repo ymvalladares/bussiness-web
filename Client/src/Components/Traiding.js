@@ -1,6 +1,8 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
 import CardChart from "./CardChart";
+import LineChartComp from "./LineChartComp";
+import CircleChart from "./CircleChart";
 
 const charts_content = [
   {
@@ -53,6 +55,14 @@ const Traiding = () => {
             />
           </Grid>
         ))}
+      </Grid>
+      <Grid container spacing={5} mt={6}>
+        <Grid item xs={12} md={12} xl={6}>
+          <LineChartComp />
+        </Grid>
+        <Grid mt={6} item xs={12} md={12} xl={6}>
+          <CircleChart />
+        </Grid>
       </Grid>
     </Box>
   );
