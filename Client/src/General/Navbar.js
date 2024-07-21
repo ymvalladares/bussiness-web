@@ -1,32 +1,10 @@
-// import React, { useEffect, useState } from "react";
-// import AppBar from "@mui/material/AppBar";
-// import Box from "@mui/material/Box";
-// import Toolbar from "@mui/material/Toolbar";
-// import Typography from "@mui/material/Typography";
-// import Button from "@mui/material/Button";
-// import IconButton from "@mui/material/IconButton";
-// import MenuIcon from "@mui/icons-material/Menu";
-
 import CoPresentIcon from "@mui/icons-material/CoPresent";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import AppSettingsAltIcon from "@mui/icons-material/AppSettingsAlt";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import ProductionQuantityLimitsIcon from "@mui/icons-material/ProductionQuantityLimits";
-import ChatIcon from "@mui/icons-material/Chat";
 import SettingsIcon from "@mui/icons-material/Settings";
 
-// import MailIcon from "@mui/icons-material/Mail";
-// import NotificationsIcon from "@mui/icons-material/Notifications";
-// import {
-//   Badge,
-//   Divider,
-//   Drawer,
-//   List,
-//   ListItem,
-//   ListItemButton,
-//   ListItemIcon,
-//   ListItemText,
-// } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 // import Menu_Avatar from "./Menu_Avatar";
 // import { Link } from "react-router-dom";
@@ -58,6 +36,7 @@ import Menu_Avatar from "./Menu_Avatar";
 import iconPage from "../Images/iconPage.jpg";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { Stack } from "@mui/material";
+import AdSense from "../Components/AdSense";
 
 const menu_sidebar = [
   {
@@ -108,7 +87,7 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    margin: "70px 15px 5px 0px",
+    margin: "65px 15px 5px 0px",
     borderRadius: "20px",
     marginLeft: `-295px`,
     //marginRight: `20px`,
@@ -119,7 +98,7 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
         easing: theme.transitions.easing.easeOut,
         duration: theme.transitions.duration.enteringScreen,
       }),
-      margin: "70px 15px 15px 15px",
+      margin: "65px 15px 15px 15px",
       marginLeft: "1px",
       borderRadius: "0px 20px 20px 0px",
     }),
@@ -388,7 +367,7 @@ const Navbar = () => {
             borderRadius: "15px",
           }}
         >
-          footer
+          <AdSense dataAdSlot="X7XXXXXX5X" />
         </Box>
       </Drawer>
       <Main

@@ -16,14 +16,10 @@ import { Badge, Typography } from "@mui/material";
 import { Pots_Request } from "../Services/AxiosRequest";
 import { useNavigate } from "react-router-dom";
 import { StopChatConnection } from "../Services/ChatService";
-import { Context } from "../Context/context";
 
 const Menu_Avatar = ({ Username }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const Navigate = useNavigate();
-  const ctx = useContext(Context);
-
-  // console.log(ctx);
 
   const open = Boolean(anchorEl);
   const handleClick = (event) => {

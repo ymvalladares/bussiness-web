@@ -55,9 +55,9 @@ const Welcome = () => {
           />
         </Grid>
 
-        <Grid item xs={12} sx={{ marginTop: "-90px", marginBottom: "10px" }}>
+        {/* <Grid item xs={12} sx={{ marginTop: "-90px", marginBottom: "10px" }}>
           <TableComp />
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
   );

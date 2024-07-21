@@ -4,7 +4,6 @@ import { Box, Container, Grid, useMediaQuery } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
-import Provedor from "../Context/context";
 import { CreateChatConnection } from "../Services/ChatService";
 
 const MainPage = () => {
@@ -20,13 +19,11 @@ const MainPage = () => {
   // }, []);
 
   return (
-    <Provedor>
-      <Grid>
-        <Box sx={{ width: "100%", height: "100%" }}>
-          <Navbar />
-        </Box>
-      </Grid>
-    </Provedor>
+    <Grid>
+      <Box sx={{ width: "100%", height: "100%" }}>
+        <Navbar />
+      </Box>
+    </Grid>
   );
 };
 
